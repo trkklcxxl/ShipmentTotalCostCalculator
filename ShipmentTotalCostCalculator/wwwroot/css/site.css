@@ -1,0 +1,173 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:lightgray;
+}
+
+.display-4 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 10px; /* Optional: add some margin between the input field and the paragraph */
+    margin-top: 20px;
+}
+
+#my-textbox-box {
+}
+
+.wrap{
+    width:1150px;
+    margin:10px auto;
+}
+
+.form-1 {
+    background-color: white;
+    font-size: 24px;
+    margin-left: 0px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 800px;
+    height: 550px;
+    align-content: center;
+    margin-left: 0px;
+    border: 1px solid gray;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.Place {
+    background-color: white;
+    border-radius: 7.5px;
+    width: 150px;
+    font-size: 14px;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+.price-div{
+    margin-top:20px;
+    display:block;
+    font-size:14px;
+    
+}
+.price-label {
+    display: inline-block;
+}
+.txtbox-price{
+    margin-left:10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 7.5px;
+    width: 75px;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+.box-sizes{
+    padding:15px 0;
+    font-size:15px;
+
+}
+.box-size {
+    margin:10px 2px;
+    background-color: white;
+    border-radius: 7.5px;
+    width: 70px;
+    font-size: 14px;
+    border: 1px solid black;
+}
+.box-size-text{
+    font-size:16px;
+    margin:0 auto;
+
+}
+.div-radiobutton {
+    text-align: center;
+    width:500px;
+}
+
+.radiobutton {
+    width: 75px; /* adjust this value to fit your design */
+    margin: 0 auto;
+    font-size: 14px;
+}
+.div-amount{
+    margin:10px 0;
+    font-size:16px;
+}
+.txtbox-amount{
+    font-size:14px;
+    margin-left:10px;
+    border:1px solid black;
+    border-radius:7.5px;
+}
+.div-year {
+    font-size: 16px;
+}
+
+.txtbox-year {
+    margin-top:10px;
+    font-size: 14px;
+    margin-left: 6px;
+    border: 1px solid black;
+    border-radius: 7.5px;
+}
+.div-frequency {
+    font-size: 16px;
+}
+
+.txtbox-frequency{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 6px;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    width:75px;
+}
+.div-button{
+    margin:50px auto;
+    width:500px;
+}
+.calc-button {
+    width: 300px;
+    height: 45px;
+    border-radius: 7.5px;
+    background-color: white; 
+    border: 1px solid black;
+    font-size: 14px;
+    
+}
+
+   .calc-button:hover {
+        background-color: lightgray; /* butona mouse imlecini getirdiðinizde deðiþecek arka plan rengini buradan belirtebilirsiniz */
+        cursor: pointer;
+    }
+.form-2 {
+    background-color: white;
+    float: right;
+    margin-top: 20px;
+    height: 550px;
+    width: 330px;
+    margin-left: 0px; /* Boþluðu sýfýra ayarlar */
+    border: 1px solid gray;
+    padding: 25px;
+    border-radius: 10px;
+}

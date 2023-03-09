@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class=" wrap">
+
+    <div class=" form-1">
+        <label>From</label>
+        <input type="text" class="Place"/>
+        <label>To</label>
+        <input type="text" class="Place" />
+        <div class="price-div">
+            <label class="price-label">Price for 1000pcs in unit of EUR</label>
+            <input type="text" class="txtbox-price" />
+        </div>
+        <div class="box-sizes">
+            <p class="box-size-text">Please select the box sizes (cm)</p>
+            <label>Width X</label>
+            <input type="text" class="box-size" />
+            <label>Length X</label>
+            <input type="text" class="box-size" />
+            <label>Height</label>
+            <input type="text" class="box-size" />
+            <div class="div-radiobutton">
+                <label class="radiobutton">
+                    <input type="radio" name="size" value="1">
+                    Default
+                </label>
+                <label class="radiobutton">
+                    <input type="radio" name="size" value="0">
+                    Custom
+                </label>
+            </div>
+        </div>
+        <div class="div-amount">
+            <label class="amount-label">Amount in a box</label>
+            <input type="text" class="txtbox-amount" />
+        </div>
+        <div class="div-year">
+            <label class="amount-label">Amount in a year</label>
+            <input type="text" class="txtbox-year" />
+        </div>
+        <div class="div-frequency">
+            <label class="frequency-label">Frequency</label>
+            <input type="text" class="txtbox-frequency" />
+        </div>
+        <div class="div-button">
+            <button class="calc-button">Calculate Cost</button>
+        </div>
+        
+    </div>
+    <div class="form-2">
+
+
+    </div>
+
+</div>
+
+
+
