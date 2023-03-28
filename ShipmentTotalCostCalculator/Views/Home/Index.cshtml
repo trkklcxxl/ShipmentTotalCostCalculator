@@ -1,61 +1,98 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    
 }
+@{
+    var newText = ViewBag.NewText ?? ""; // Eğer ViewBag.NewText null ise, varsayılan olarak boş bir dize kullanır
+}
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div class=" wrap">
+
+        <div class=" form-1">
+            <input type="radio" id="radioButton" name="radioButton" value="germany">
+            <label for="radioButton">Germany</label>
+            <input type="radio" id="radioButton2" name="radioButton" value="othereurope">
+            <label for="radioButton2">Other Europe</label>
+            <input type="radio" id="radioButton3" name="radioButton" value="usa">
+            <label for="radioButton3">USA</label>
+            <input type="radio" id="radioButton4" name="radioButton" value="china">
+            <label for="radioButton3">China</label>
+            <label>To</label>
+            <input type="text" id="txt-Receiver" class="Place">
+            <div class="price-div">
+                <label class="price-label">Price for 1000pcs in unit of EUR</label>
+                <input type="text" class="txtbox-price" id="txt-Price"> <br>
+                <label class="price-label">Weight of 1 pcs in unit of gram  </label>
+                <input type="text" class="txtbox-price" id="txt-weight">
+            </div>
+            <div class="box-sizes">
+                <p class="box-size-text">Please select the box sizes (cm)</p>
+                <label>Width X</label>
+                <input type="text" id="txt_Width" class="box-size">
+                <label>Length X</label>
+                <input type="text" id="txt_Length" class="box-size">
+                <label>Height</label>
+                <input type="text" id="txt_height" class="box-size">
+                <div class="div-radiobutton">
+                    <input type="radio" id="a" name="radioButton2" value="default">
+                    <label for="a">Default</label>
+                    <input type="radio" id="b" name="radioButton2" value="custom">
+                    <label for="b">Custom</label>
+                </div>
+            </div>
+            <div class="div-amount">
+                <label class="amount-label">Amount in a box</label>
+                <input type="text" id="txt_Box_Amount" class="txtbox-amount">
+            </div>
+            <div class="div-year">
+                <label class="amount-label">Amount in a year</label>
+                <input type="text" id="txt_Amount_Year" class="txtbox-year">
+            </div>
+            <div class="div-frequency">
+                <label class="frequency-label">Frequency</label>
+                <input type="text" id="txt_frequency" class="txtbox-frequency">
+            </div>
+            <div class="div-button">
+                <button type="button" class="calc-button" onclick="CalculateCost()">Calculate Cost</button>
+                <button type="reset" class="calc-button">Clear All</button>
+            </div>
 
 
-<div class=" wrap">
-
-    <div class=" form-1">
-        <label>From</label>
-        <input type="text" class="Place"/>
-        <label>To</label>
-        <input type="text" class="Place" />
-        <div class="price-div">
-            <label class="price-label">Price for 1000pcs in unit of EUR</label>
-            <input type="text" class="txtbox-price" />
         </div>
-        <div class="box-sizes">
-            <p class="box-size-text">Please select the box sizes (cm)</p>
-            <label>Width X</label>
-            <input type="text" class="box-size" />
-            <label>Length X</label>
-            <input type="text" class="box-size" />
-            <label>Height</label>
-            <input type="text" class="box-size" />
-            <div class="div-radiobutton">
-                <label class="radiobutton">
-                    <input type="radio" name="size" value="1">
-                    Default
-                </label>
-                <label class="radiobutton">
-                    <input type="radio" name="size" value="0">
-                    Custom
-                </label>
+        <div class="form-2">
+            <div>
+                <div class="results_div">
+                    <label class="results-label">Product cost for 1 shipment: </label>
+                    <input type="text" class="results" id="satici_maliyet">
+                    
+                </div>
+                <div class="results_div">
+                    <label class="results-label">Shipment cost for 1 shipment: </label>
+                    <input type="text" class="results" id="shipment_cost">
+                </div>
+                <div class="results_div">
+                    <label class="results-label">Taxes for 1 shipment </label>
+                    <input type="text" class="results" id="taxes">
+                </div>
+                <div class="results_div">
+                    <label class="results-label">Total Cost for 1 shipment </label>
+                    <input type="text" class="results" id="total_cost_per_shipment">                
+                </div>
+                <div class="results_div">
+                    <label class="results-label">Total Cost for 1 year shipment </label>
+                    <input type="text" class="results" id="total_cost_per_year">
+                </div>
+               
+                
+                
+                
             </div>
         </div>
-        <div class="div-amount">
-            <label class="amount-label">Amount in a box</label>
-            <input type="text" class="txtbox-amount" />
-        </div>
-        <div class="div-year">
-            <label class="amount-label">Amount in a year</label>
-            <input type="text" class="txtbox-year" />
-        </div>
-        <div class="div-frequency">
-            <label class="frequency-label">Frequency</label>
-            <input type="text" class="txtbox-frequency" />
-        </div>
-        <div class="div-button">
-            <button class="calc-button">Calculate Cost</button>
-        </div>
-        
-    </div>
-    <div class="form-2">
-
 
     </div>
+}
 
-</div>
 
 
 

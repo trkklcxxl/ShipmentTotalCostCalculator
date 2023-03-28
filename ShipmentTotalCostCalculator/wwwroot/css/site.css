@@ -33,7 +33,7 @@ body {
 }
 
 .wrap{
-    width:1150px;
+    width:1180px;
     margin:10px auto;
 }
 
@@ -147,6 +147,7 @@ body {
     width:500px;
 }
 .calc-button {
+    margin-top:10px;
     width: 300px;
     height: 45px;
     border-radius: 7.5px;
@@ -165,9 +166,30 @@ body {
     float: right;
     margin-top: 20px;
     height: 550px;
-    width: 330px;
+    width: 350px;
     margin-left: 0px; /* Boþluðu sýfýra ayarlar */
     border: 1px solid gray;
     padding: 25px;
     border-radius: 10px;
 }
+.results_div {
+    padding:10px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 300px;
+    border: 1px solid red;
+}
+.results-label {
+    width: 200px;
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 15px;
+}
+.results{
+    width:60px;  
+    border:1px solid black;
+    height:35px;
+    border-radius:15px;
+
+}
+
