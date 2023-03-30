@@ -112,7 +112,7 @@ function CalculateCost() {
         //txtWidthElement.value = product_cost_for_one_shipment; //firs row, second column
         document.getElementById("satici_maliyet").value = product_cost_for_one_shipment;
         document.getElementById("shipment_cost").value = shipment_cost_for_one_shipment;
-        document.getElementById("taxes").value = weight_of_one_box; //default 0 for now
+        document.getElementById("taxes").value = 0; //default 0 for now 
         document.getElementById("total_cost_per_shipment").value = total_cost_for_one_shipment;
         document.getElementById("total_cost_per_year").value = total_cost_for_one_year;
 

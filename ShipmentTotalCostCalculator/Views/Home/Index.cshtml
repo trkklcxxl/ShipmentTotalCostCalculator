@@ -10,47 +10,62 @@
     <div class=" wrap">
 
         <div class=" form-1">
-            <input type="radio" id="radioButton" name="radioButton" value="germany">
-            <label for="radioButton">Germany</label>
+            <input type="radio" id="radioButton" name="radioButton" value="germany" >
+            <label class="radio-label" for="radioButton" >Germany</label>
             <input type="radio" id="radioButton2" name="radioButton" value="othereurope">
-            <label for="radioButton2">Other Europe</label>
+            <label class="radio-label" for="radioButton2">Other Europe</label>
             <input type="radio" id="radioButton3" name="radioButton" value="usa">
-            <label for="radioButton3">USA</label>
+            <label class="radio-label" for="radioButton3">USA</label>
             <input type="radio" id="radioButton4" name="radioButton" value="china">
-            <label for="radioButton3">China</label>
-            <label>To</label>
+            <label class ="radio-label" for="radioButton4">China</label>
+            <label style="font-family:Verdana;font-weight:bold">to</label>
             <input type="text" id="txt-Receiver" class="Place">
             <div class="price-div">
-                <label class="price-label">Price for 1000pcs in unit of EUR</label>
+                <label class="price-label">Price for 1000pcs in unit of EUR:</label>
                 <input type="text" class="txtbox-price" id="txt-Price"> <br>
-                <label class="price-label">Weight of 1 pcs in unit of gram  </label>
+                <label class="price-label">Weight of 1 pcs in unit of gram    :</label>
                 <input type="text" class="txtbox-price" id="txt-weight">
             </div>
-            <div class="box-sizes">
-                <p class="box-size-text">Please select the box sizes (cm)</p>
-                <label>Width X</label>
-                <input type="text" id="txt_Width" class="box-size">
-                <label>Length X</label>
-                <input type="text" id="txt_Length" class="box-size">
-                <label>Height</label>
-                <input type="text" id="txt_height" class="box-size">
-                <div class="div-radiobutton">
-                    <input type="radio" id="a" name="radioButton2" value="default">
-                    <label for="a">Default</label>
-                    <input type="radio" id="b" name="radioButton2" value="custom">
-                    <label for="b">Custom</label>
+            <div class="container" style="padding:0;margin:0;">
+                <div class="row">
+                    <div class="col" style="padding:0;margin:0;">
+                        <div class="box-sizes">
+                            <p class="box-size-text">Please select the box sizes (cm)</p>
+                            <label>Width X</label>
+                            <input type="text" id="txt_Width" class="box-size">
+                            <label>Length X</label>
+                            <input type="text" id="txt_Length" class="box-size">
+                            <label>Height</label>
+                            <input type="text" id="txt_height" class="box-size">
+                            <div class="div-radiobutton">
+                                <input type="radio" id="a" name="radioButton2" value="default">
+                                <label style="margin-right:5px;" for="a">Default (30X30X30)</label>
+                                <input type="radio" id="b" name="radioButton2" value="custom">
+                                <label for="b">Custom</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col" style="padding:0;margin:0;">
+                        <div class="image">
+                            <img src="~/lib/box.png" style="margin-left:20px;width:96px;height:96px;">
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+            
             <div class="div-amount">
-                <label class="amount-label">Amount in a box</label>
+                <label class="amount-label">Amount in a box:</label>
                 <input type="text" id="txt_Box_Amount" class="txtbox-amount">
             </div>
             <div class="div-year">
-                <label class="amount-label">Amount in a year</label>
+                <label class="amount-label">Amount in a year:</label>
                 <input type="text" id="txt_Amount_Year" class="txtbox-year">
             </div>
             <div class="div-frequency">
-                <label class="frequency-label">Frequency</label>
+                <label class="frequency-label">Frequency:</label>
                 <input type="text" id="txt_frequency" class="txtbox-frequency">
             </div>
             <div class="div-button">
@@ -61,32 +76,53 @@
 
         </div>
         <div class="form-2">
-            <div>
-                <div class="results_div">
-                    <label class="results-label">Product cost for 1 shipment: </label>
-                    <input type="text" class="results" id="satici_maliyet">
-                    
+            <div style="position: relative; align-items:center; border-bottom:1px solid black;margin-bottom:20px;" class="container">
+                <h1 class="h1">Results</h1>
+            </div>
+            <div class="container">
+                <div style="margin-top:10px" class="row">
+                    <div class="col">
+                        <label class="results-label">Product cost for 1 shipment: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="results" id="satici_maliyet">
+                    </div>
                 </div>
-                <div class="results_div">
-                    <label class="results-label">Shipment cost for 1 shipment: </label>
-                    <input type="text" class="results" id="shipment_cost">
+                <div style ="margin-top:10px" class="row">
+                    <div class="col">
+                        <label class="results-label">Shipment cost for 1 shipment: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="results" id="shipment_cost">
+                    </div>
                 </div>
-                <div class="results_div">
-                    <label class="results-label">Taxes for 1 shipment </label>
-                    <input type="text" class="results" id="taxes">
+                <div style="margin-top:10px" class="row">
+                    <div class="col">
+                        <label class="results-label">Taxes for 1 shipment: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="results" id="taxes">
+                    </div>
                 </div>
-                <div class="results_div">
-                    <label class="results-label">Total Cost for 1 shipment </label>
-                    <input type="text" class="results" id="total_cost_per_shipment">                
+                <div style="margin-top:10px" class="row">
+                    <div class="col">
+                        <label class="results-label">Total Cost for 1 shipment: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="results" id="total_cost_per_shipment">
+                    </div>
                 </div>
-                <div class="results_div">
-                    <label class="results-label">Total Cost for 1 year shipment </label>
-                    <input type="text" class="results" id="total_cost_per_year">
+                <div style="margin-top:10px" class="row">
+                    <div class="col">
+                        <label class="results-label">Total Cost for 1 year shipment: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="results" id="total_cost_per_year">
+                    </div>
                 </div>
-               
-                
-                
-                
+                <div class="explanetation">
+                    <p>The above prices may differ from the actual prices due to special offers or high quantity shipment. This is just an estimate of the actual prices.Please contact the shipping company to get a quotation.<p />
+                </div>               
             </div>
         </div>
 

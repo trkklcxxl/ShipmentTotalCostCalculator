@@ -15,7 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color:lightgray;
+  background-color:white;
 }
 
 .display-4 {
@@ -45,7 +45,7 @@ body {
     float: left;
     margin-top: 20px;
     margin-right: 0px;
-    width: 800px;
+    width: 750px;
     height: 550px;
     align-content: center;
     margin-left: 0px;
@@ -53,51 +53,70 @@ body {
     padding: 25px;
     border-radius: 10px;
 }
+.radio-label {
+    font-size:18px;
+    font-weight:bold;
+    margin:0;
 
+ 
+}
 .Place {
     background-color: white;
     border-radius: 7.5px;
     width: 150px;
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid black;
     margin: 0 10px;
 }
 .price-div{
     margin-top:20px;
     display:block;
-    font-size:14px;
+    font-size:16px;
+
     
 }
 .price-label {
-    display: inline-block;
+    font-family:Verdana;
 }
 .txtbox-price{
-    margin-left:10px;
+    margin:3px;
     display: inline-block;
-    background-color: white;
+    margin-left:auto;
     border-radius: 7.5px;
     width: 75px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid black;
 }
 
 .box-sizes{
-    padding:15px 0;
+    margin-top:10px;
+    padding:10px 0;
     font-size:15px;
+    display:inline-block;
+    width:430px;
 
+}
+.image{
+    padding:0;
+    margin-left:0px;
+    margin-top:20px;
+    width:100px;
+    height: 100px;
+    display:inline-block;
 }
 .box-size {
     margin:10px 2px;
     background-color: white;
     border-radius: 7.5px;
     width: 70px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid black;
+    font-family:Verdana;
 }
-.box-size-text{
-    font-size:16px;
-    margin:0 auto;
-
+.box-size-text {
+    font-size: 16px;
+    margin: 0 auto;
+    font-family: Verdana;
 }
 .div-radiobutton {
     text-align: center;
@@ -110,41 +129,49 @@ body {
     font-size: 14px;
 }
 .div-amount{
-    margin:10px 0;
+    margin:5px 0;
     font-size:16px;
+    font-family:Verdana;
 }
-.txtbox-amount{
-    font-size:14px;
-    margin-left:10px;
-    border:1px solid black;
-    border-radius:7.5px;
+.txtbox-amount {
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    width: 87px;
 }
 .div-year {
     font-size: 16px;
+    font-family: Verdana;
 }
 
 .txtbox-year {
-    margin-top:10px;
-    font-size: 14px;
-    margin-left: 6px;
+    font-size: 16px;
+    width: 87px;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-left: 5px;
     border: 1px solid black;
     border-radius: 7.5px;
 }
 .div-frequency {
     font-size: 16px;
+    font-family:Verdana;
 }
 
-.txtbox-frequency{
+.txtbox-frequency {
+    font-size: 16px;
     margin-top: 10px;
     font-size: 14px;
     margin-left: 6px;
     border: 1px solid black;
     border-radius: 7.5px;
-    width:75px;
+    width: 55px;
 }
 .div-button{
+
     margin:50px auto;
-    width:500px;
+    width:610px;
 }
 .calc-button {
     margin-top:10px;
@@ -164,32 +191,49 @@ body {
 .form-2 {
     background-color: white;
     float: right;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 550px;
-    width: 350px;
+    width: 400px;
     margin-left: 0px; /* Boþluðu sýfýra ayarlar */
     border: 1px solid gray;
-    padding: 25px;
+    padding: 50px 5px;
     border-radius: 10px;
 }
-.results_div {
-    padding:10px;
-    font-size: 14px;
-    margin-top: 5px;
-    width: 300px;
-    border: 1px solid red;
+.title{
+    font-family:Verdana;
+    margin-bottom:30px;
+    margin-left:0;
+    margin-right:0;
+}
+.h1 {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; /* Need a specific value to work */
 }
 .results-label {
-    width: 200px;
+    padding:2px 5px;
+    width: 265px;
     border: 1px solid black;
     height: 35px;
-    border-radius: 15px;
+    border-radius: 7.5px;
+    font-size:16px;
+    font-family:Verdana;
 }
-.results{
-    width:60px;  
-    border:1px solid black;
-    height:35px;
-    border-radius:15px;
-
+.results {
+    width: 75px;
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 7.5px;
+    font-size: 16px;
+    font-family: Verdana;
+}
+.explanetation{
+    font-family:Verdana;
+    font-size:14px;
+    height:50px;
+    width:300px;
+    margin-top:20px;
 }
 
